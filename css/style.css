@@ -1,0 +1,226 @@
+/* ======== RESET ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f4ff;
+  color: #2a0134;
+  line-height: 1.6;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* ======== HEADER ======== */
+header {
+  text-align: center;
+  background: linear-gradient(135deg, #6d28d9, #9333ea);
+  color: white;
+  padding: 80px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#subtitulo {
+  font-size: 1.3rem;
+  color: #d8b4fe;
+  height: 24px;
+}
+
+/* ======== NAV ======== */
+nav {
+  background: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #6d28d9;
+  font-weight: 600;
+  transition: color 0.5s;
+}
+
+nav a:hover {
+  color: #161616;
+}
+
+/* ======== SEÇÕES ======== */
+section {
+  
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #6d28d9;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* ======== PROJETOS ======== */
+.projeto {
+  border-left: 4px solid #9333ea;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.projeto:hover {
+  transform: translateY(-5px);
+}
+
+.projeto a {
+  color: #6d28d9;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.projeto a:hover {
+  text-decoration: underline;
+}
+
+/* ======== BOTÃO ======== */
+.botao {
+  display: inline-block;
+  padding: 12px 25px;
+  color: #fff;
+  background: linear-gradient(90deg, #6d28d9, #9333ea);
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  top: 12px;
+}
+
+.botao:hover {
+  box-shadow: 0 0 20px #b388ff;
+}
+
+/* ======== ANIMAÇÕES ======== */
+.revelar {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.revelar.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ======== MODO ESCURO ======== */
+.dark {
+  background-color: #1a0221;
+  color: #f5e8ff;
+}
+
+.dark section {
+  background-color: #2a0134;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark nav {
+  background-color: #2a0134;
+}
+
+.tema-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #9333ea;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.tema-btn:hover {
+  transform: rotate(15deg);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #6d28d9;
+  color: white;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 900px) {
+  section {
+    margin: 40px 20px;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 60px 15px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  #subtitulo {
+    font-size: 1rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px;
+  }
+
+  nav a {
+    margin: 6px;
+    display: block;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  .botao {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .tema-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+}
