@@ -1,7 +1,6 @@
-# Portfólio - Luana Martins 💻
+# Login Mystery 🔪
 
-Um portfólio pessoal desenvolvido com HTML, CSS e JavaScript.
-Tema em tons de roxo, responsivo e com animações suaves.
+Projeto criado para celebrar o aniversário de uma amiga, inspirado na temática da série Dexter.
 
 🔗 [Acesse aqui!](https://luuhxd.github.io/Portf-lioSimples/)
 
